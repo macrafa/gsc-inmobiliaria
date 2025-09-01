@@ -1,0 +1,7 @@
+# Strapi CMS
+node_modules/
+.cache/
+build/
+public/uploads/
+.env*
+
