@@ -26,10 +26,7 @@ return (
           alt={alt}
           className="w-full max-h-[380px] rounded-md bg-panel object-contain"
           onError={(e) => {
-            const img = e.currentTarget as HTMLImageElement
-            if (img.dataset.fallback === '1') return
-            img.dataset.fallback = '1'
-            img.src = 'https://images.unsplash.com/photo-1560185008-b033106af2fb?q=80&w=1600&auto=format&fit=crop'
+            e.currentTarget.style.display = 'none';
           }}
         />
       </div>
@@ -51,10 +48,7 @@ return (
                 alt=""
                 className="h-full w-full object-cover"
                 onError={(e) => {
-                  const img = e.currentTarget as HTMLImageElement
-                  if (img.dataset.fallback === '1') return
-                  img.dataset.fallback = '1'
-                  img.src = 'https://images.unsplash.com/photo-1560185008-b033106af2fb?q=80&w=1600&auto=format&fit=crop'
+                  e.currentTarget.style.display = 'none';
                 }}
               />
             </button>
