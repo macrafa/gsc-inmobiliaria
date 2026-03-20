@@ -4,6 +4,7 @@ import { Suspense } from 'react'
 import './globals.css'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { Analytics } from '@vercel/analytics/next'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] })
@@ -22,6 +23,7 @@ return (
         </Suspense>
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
 )
