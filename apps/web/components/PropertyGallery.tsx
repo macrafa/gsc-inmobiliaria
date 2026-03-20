@@ -31,7 +31,7 @@ export default function PropertyGallery({ images }: { images: string[] }) {
       <div className="overflow-hidden rounded-3xl border border-border" ref={emblaRef}>
         <div className="flex touch-pan-y">
           {images.map((url, i) => (
-            <div key={i} className="flex-[0_0_100%] min-w-0 relative aspect-[4/3] md:aspect-video bg-bg">
+            <div key={i} className="flex-[0_0_100%] min-w-0 relative aspect-[3/4] md:aspect-square bg-bg">
               <img src={url} alt={`Foto del inmueble ${i + 1}`} className="w-full h-full object-cover" />
             </div>
           ))}

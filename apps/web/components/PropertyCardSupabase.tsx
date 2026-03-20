@@ -10,7 +10,7 @@ export default function PropertyCardSupabase({ property }: { property: any }) {
   return (
     <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border">
       <Link href={`/imoveis/${property.slug}`}>
-        <div className="relative overflow-hidden h-64 bg-bg border-b border-border">
+        <div className="relative overflow-hidden aspect-[3/4] w-full bg-bg border-b border-border">
           {firstImage ? (
             <img
               src={firstImage}
